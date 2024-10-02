@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR } from "next/font/google";
+import { Noto_Sans_KR, Rubik, Poppins } from "next/font/google";
 import "./globals.css";
-
-const notoSansKR = Noto_Sans_KR({
-    weight: ["400", "700"],
-    subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
     title: "임수진 | 프론트엔드 개발자",
@@ -13,10 +8,27 @@ export const metadata: Metadata = {
     robots: "noindex, nofollow",
 };
 
+const notoSansKR = Noto_Sans_KR({
+    weight: ["400", "700"],
+    subsets: ["latin"],
+});
+const rubik = Rubik({
+    weight: ["700"],
+    subsets: ["latin"],
+    variable: "--font-rubik",
+});
+const poppins = Poppins({
+    weight: ["700"],
+    subsets: ["latin"],
+    variable: "--font-poppins",
+});
+
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
         <html lang="ko">
-            <body className={notoSansKR.className}>{children}</body>
+            <body className={`${notoSansKR.className} ${rubik.variable} ${poppins.variable}`}>
+                {children}
+            </body>
         </html>
     );
 };
