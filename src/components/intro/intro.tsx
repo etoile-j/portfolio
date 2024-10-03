@@ -1,6 +1,9 @@
+import Image from "next/image";
+import scrollDownIcon from "/public/img/icon/down-arrow.svg";
+
 const Intro = () => {
     return (
-        <section className="lg:items-start flex h-screen w-screen flex-col items-center justify-center overflow-hidden">
+        <section className="lg:items-start flex h-screen w-screen flex-col items-center justify-center">
             <div>
                 <video
                     className="object-cover w-screen h-screen"
@@ -21,6 +24,11 @@ const Intro = () => {
                 </div>
                 <p className="pl-2">2024.10.</p>
             </div>
+            <Image
+                className="absolute inset-x-2/4 bottom-12 animate-bounce"
+                src={scrollDownIcon}
+                alt="스크롤 다운 유도 아이콘"
+            />
         </section>
     );
 };
