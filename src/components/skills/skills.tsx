@@ -19,7 +19,7 @@ const Skills = () => {
         <section>
             <h2>Skills</h2>
             <div className="drop-shadow">
-                <ul className="flex justify-between">
+                <ul className="flex justify-center gap-6">
                     {feIcons.map((feIcon) => {
                         return (
                             <li key={feIcon}>
@@ -35,7 +35,7 @@ const Skills = () => {
                     })}
                 </ul>
                 <div className="pt-8">
-                    <ul className="flex justify-between">
+                    <ul className="flex justify-center gap-6">
                         {etcIcons.map((etcIcon) => {
                             return (
                                 <li key={etcIcon}>
