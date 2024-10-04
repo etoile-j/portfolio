@@ -7,6 +7,7 @@ const config: Config = {
             fontFamily: {
                 poppins: ["var(--font-poppins)", "sans-serif"],
                 rubik: ["var(--font-rubik)", "sans-serif"],
+                inconsolata: ["var(--font-inconsolata)", "sans-serif"],
             },
             colors: {
                 background: "var(--background)",

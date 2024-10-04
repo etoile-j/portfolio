@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR, Rubik, Poppins } from "next/font/google";
+import { Noto_Sans_KR, Rubik, Poppins, Inconsolata } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,11 +22,18 @@ const poppins = Poppins({
     subsets: ["latin"],
     variable: "--font-poppins",
 });
+const inconsolata = Inconsolata({
+    weight: ["500"],
+    subsets: ["latin"],
+    variable: "--font-inconsolata",
+});
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
         <html lang="ko">
-            <body className={`${notoSansKR.className} ${rubik.variable} ${poppins.variable}`}>
+            <body
+                className={`${notoSansKR.className} ${rubik.variable} ${poppins.variable} ${inconsolata.variable}`}
+            >
                 {children}
             </body>
         </html>
