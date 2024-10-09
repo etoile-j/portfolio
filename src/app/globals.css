@@ -22,7 +22,7 @@ body {
 
 @layer base {
     h2 {
-        @apply inline-block mt-32 mb-10 pr-1 font-poppins text-5xl italic bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-blue-200 to-fuchsia-300;
+        @apply inline-block mt-32 mb-10 pr-1 pb-1.5 font-poppins text-5xl italic bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-blue-200 to-fuchsia-300;
     }
 }
 
