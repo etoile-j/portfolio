@@ -19,6 +19,10 @@ const config: Config = {
                     "0%": { opacity: "0", transform: "translateY(-50%)", visibility: "visible" },
                     "100%": { opacity: "1", transform: "translateY(0)", visibility: "visible" },
                 },
+                slideUp: {
+                    "0%": { opacity: "0", transform: "translateY(25px)" },
+                    "100%": { opacity: "1", transform: "translateY(0)" },
+                },
                 slideInLeft: {
                     "0%": { opacity: "0", transform: "translateX(-40px)", visibility: "visible" },
                     "100%": { opacity: "1", transform: "translateX(0)", visibility: "visible" },
@@ -28,6 +32,7 @@ const config: Config = {
                 grow: "grow 0.5s ease-in-out forwards",
                 slideInLeft: "slideInLeft 0.6s ease-in-out forwards",
                 slideDown: "slideDown 0.3s ease-in-out forwards",
+                slideUp: "slideUp 0.8s ease-in-out forwards",
             },
         },
     },
