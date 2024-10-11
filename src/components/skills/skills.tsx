@@ -24,6 +24,22 @@ const Skills = () => {
     const { isVisible } = useSlideUp(sectionTitleRef);
     const { isVisible: isVisibleSkills } = useSlideUp(skillsDiv);
 
+    const renderIcons = (icons: string[]) => (
+        <ul className="flex justify-center gap-3.5 md:gap-6 xl:gap-10">
+            {icons.map((icon) => (
+                <li key={icon}>
+                    <Image
+                        src={`/img/icon/${icon}.svg`}
+                        alt={icon}
+                        title={icon}
+                        width={64}
+                        height={64}
+                    />
+                </li>
+            ))}
+        </ul>
+    );
+
     return (
         <section>
             <h2 ref={sectionTitleRef} className={`opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
@@ -33,39 +49,9 @@ const Skills = () => {
                 ref={skillsDiv}
                 className={`drop-shadow opacity-0 ${isVisibleSkills ? "animate-slideUp" : ""}`}
             >
-                <ul className="flex justify-center gap-6">
-                    {feIcons.map((feIcon) => {
-                        return (
-                            <li key={feIcon}>
-                                <Image
-                                    src={`/img/icon/${feIcon}.svg`}
-                                    alt={feIcon}
-                                    title={feIcon}
-                                    width={64}
-                                    height={64}
-                                />
-                            </li>
-                        );
-                    })}
-                </ul>
-                <div className="pt-8">
-                    <ul className="flex justify-center gap-6">
-                        {etcIcons.map((etcIcon) => {
-                            return (
-                                <li key={etcIcon}>
-                                    <Image
-                                        src={`/img/icon/${etcIcon}.svg`}
-                                        alt={etcIcon}
-                                        title={etcIcon}
-                                        width={64}
-                                        height={64}
-                                    />
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </div>
+                {renderIcons(feIcons)}
             </div>
+            <div className="pt-8">{renderIcons(etcIcons)}</div>
         </section>
     );
 };
