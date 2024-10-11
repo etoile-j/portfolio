@@ -32,7 +32,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
         <html lang="ko">
             <body
-                className={`${notoSansKR.className} ${rubik.variable} ${poppins.variable} ${inconsolata.variable}`}
+                className={`min-w-[375px] ${notoSansKR.className} ${rubik.variable} ${poppins.variable} ${inconsolata.variable}`}
             >
                 {children}
             </body>
