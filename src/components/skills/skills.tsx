@@ -25,7 +25,7 @@ const Skills = () => {
     const { isVisible: isVisibleSkills } = useSlideUp(skillsDiv);
 
     const renderIcons = (icons: string[]) => (
-        <ul className="flex justify-center gap-3.5 md:gap-6 xl:gap-10">
+        <ul className="flex flex-wrap justify-center gap-3.5 md:gap-6 xl:gap-10 drop-shadow">
             {icons.map((icon) => (
                 <li key={icon}>
                     <Image
@@ -47,11 +47,13 @@ const Skills = () => {
             </h2>
             <div
                 ref={skillsDiv}
-                className={`drop-shadow opacity-0 ${isVisibleSkills ? "animate-slideUp" : ""}`}
+                className={`opacity-0 ${isVisibleSkills ? "animate-slideUp" : ""}`}
             >
                 {renderIcons(feIcons)}
             </div>
-            <div className="pt-8">{renderIcons(etcIcons)}</div>
+            <div className={`pt-12 opacity-0 ${isVisibleSkills ? "animate-slideUp" : ""}`}>
+                {renderIcons(etcIcons)}
+            </div>
         </section>
     );
 };
