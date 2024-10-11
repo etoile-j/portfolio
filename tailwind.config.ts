@@ -4,6 +4,9 @@ const config: Config = {
     content: ["./src/components/**/*.{ts,tsx}", "./src/app/**/*.{ts,tsx}"],
     theme: {
         extend: {
+            screens: {
+                sm: "375px",
+            },
             fontFamily: {
                 poppins: ["var(--font-poppins)", "sans-serif"],
                 rubik: ["var(--font-rubik)", "sans-serif"],
