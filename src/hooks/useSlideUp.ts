@@ -8,12 +8,10 @@ const useSlideUp = (ref: React.RefObject<HTMLElement>, threshold: number = 0.6) 
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
-                    observer.unobserve(entry.target); // 요소가 보이면 관찰 중지
+                    observer.unobserve(entry.target);
                 }
             },
-            {
-                threshold: threshold,
-            }
+            { threshold }
         );
 
         if (ref.current) {

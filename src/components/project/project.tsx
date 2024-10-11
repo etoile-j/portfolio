@@ -96,7 +96,7 @@ const Project = () => {
             </div>
             <div
                 className={`opacity-0 ${isVisibleWhobego ? "animate-slideUp" : ""}`}
-                ref={ourshopRef}
+                ref={whobegoRef}
             >
                 <ProjectCard projectData={whobego} />
             </div>
