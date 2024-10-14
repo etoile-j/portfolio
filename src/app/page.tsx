@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <main>
             <Intro />
-            <div className="lg:mx-16 xl:mx-28 text-center">
+            <div className="md:mx-24 xl:mx-32 text-center">
                 <Skills />
                 <Project />
             </div>

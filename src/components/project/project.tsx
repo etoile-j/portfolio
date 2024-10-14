@@ -20,6 +20,7 @@ const meetsin = {
         "Mongoose",
         "AWS EC2",
         "Nginx",
+        "Github Actions",
     ],
     highlights: [
         {
@@ -78,27 +79,29 @@ const Project = () => {
     const { isVisible: isVisibleWhobego } = useSlideUp(whobegoRef, 0.2);
 
     return (
-        <section>
+        <section className="max-w-[1200px] mx-auto">
             <h2 className={isVisible ? "animate-slideUp" : ""} ref={sectionTitleRef}>
                 Project
             </h2>
-            <div
-                className={`opacity-0 ${isVisibleMeetsin ? "animate-slideUp" : ""}`}
-                ref={meetsinRef}
-            >
-                <ProjectCard projectData={meetsin} />
-            </div>
-            <div
-                className={`opacity-0 ${isVisibleOurshop ? "animate-slideUp" : ""}`}
-                ref={ourshopRef}
-            >
-                <ProjectCard projectData={ourshop} />
-            </div>
-            <div
-                className={`opacity-0 ${isVisibleWhobego ? "animate-slideUp" : ""}`}
-                ref={whobegoRef}
-            >
-                <ProjectCard projectData={whobego} />
+            <div className="text-left lg:overflow-hidden">
+                <div
+                    className={`opacity-0 ${isVisibleMeetsin ? "animate-slideUp" : ""}`}
+                    ref={meetsinRef}
+                >
+                    <ProjectCard projectData={meetsin} />
+                </div>
+                <div
+                    className={`opacity-0 ${isVisibleOurshop ? "animate-slideUp" : ""}`}
+                    ref={ourshopRef}
+                >
+                    <ProjectCard projectData={ourshop} />
+                </div>
+                <div
+                    className={`opacity-0 ${isVisibleWhobego ? "animate-slideUp" : ""}`}
+                    ref={whobegoRef}
+                >
+                    <ProjectCard projectData={whobego} />
+                </div>
             </div>
         </section>
     );

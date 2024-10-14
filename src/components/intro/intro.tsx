@@ -13,11 +13,11 @@ const Intro = () => {
                     loop
                 />
             </div>
-            <div className="lg:ml-28 absolute text-white">
-                <div className="absolute top-[-100px] left-[-50px] bg-yellow-300 w-[350px] h-[350px] rounded-full origin-center animate-grow"></div>
+            <div className="lg:ml-28 xl:ml-36 2xl:mx-56 absolute text-white">
+                <div className="absolute top-[-100px] left-[-50px] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm w-[350px] h-[350px] rounded-full origin-center animate-grow" />
                 <h1 className="font-rubik font-bold text-6xl">
                     <span
-                        className="inline-block animate-slideInLeft invisible opacity-0 tracking-wider"
+                        className="inline-block animate-slideInLeft invisible opacity-0 drop-shadow-sm tracking-wider"
                         style={{ animationDelay: "0.4s" }}
                     >
                         LIM SUJIN
