@@ -61,3 +61,5 @@ export const whobego = {
         },
     ],
 };
+
+export const projects = [meetsin, ourshop, whobego];
