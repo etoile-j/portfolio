@@ -9,11 +9,11 @@ const Specs = ({ period, teamInfo, skills }: ISpecsProps) => {
             {period}
             <br />
             {teamInfo}
-            <div>
+            <div className="sm:max-w-xl xl:max-w-max mt-1.5">
                 {skills.map((skill, index) => (
                     <span
                         key={index}
-                        className="px-2.5 py-1 mr-1 font-inconsolata text-sm rounded-2xl border border-gray-700"
+                        className="inline-block px-2.5 py-1 mr-1 font-inconsolata text-sm rounded-2xl border border-gray-700 whitespace-nowrap leading-none"
                     >
                         {skill}
                     </span>
