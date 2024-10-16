@@ -13,9 +13,11 @@ const Intro = () => {
                     loop
                 />
             </div>
-            <div className="lg:ml-28 xl:ml-36 2xl:mx-56 absolute text-white">
-                <div className="absolute top-[-100px] left-[-50px] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm w-[350px] h-[350px] rounded-full origin-center animate-grow" />
-                <h1 className="font-rubik font-bold text-6xl">
+            <div className="sm:ml-12 lg:ml-28 xl:ml-36 2xl:mx-56 absolute text-white">
+                {/* <div className="absolute top-[-80px] left-[-50px] [height:_clamp(250px,35vw,350px)] [width:_clamp(250px,35vw,350px)] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm rounded-full origin-center animate-grow" /> */}
+                <div className="absolute sm:top-[-70px] md:top-[-100px] left-[-50px] w-[260px] h-[260px] md:w-[350px] md:h-[350px] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm rounded-full origin-center animate-grow" />
+                {/* <h1 className="font-rubik font-bold leading-tight [font-size:_clamp(2.8rem,7.6vw,3.75rem)]"> */}
+                <h1 className="font-rubik font-bold text-5xl md:text-6xl">
                     <span
                         className="inline-block animate-slideInLeft invisible opacity-0 drop-shadow-sm tracking-wider"
                         style={{ animationDelay: "0.4s" }}
@@ -34,7 +36,7 @@ const Intro = () => {
                     className="animate-slideDown invisible opacity-0"
                     style={{ animationDelay: "1.3s" }}
                 >
-                    <div className="w-6/12 mt-12 mb-1.5 border-y-4 border-white">
+                    <div className="w-[320px] mt-12 mb-1.5 border-y-4 border-white">
                         <p className="py-4 pl-2">안녕하세요!</p>
                     </div>
                     <p className="pl-2 text-gray-200">2024.10.</p>
