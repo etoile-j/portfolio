@@ -1,25 +1,41 @@
-interface ISpecsProps {
-    period: string;
-    teamInfo: string;
-    skills: string[];
-}
-const Specs = ({ period, teamInfo, skills }: ISpecsProps) => {
+import { IProjectSpecs } from "@/types";
+
+const Specs = ({ specs: { period, teamInfo, skills } }: { specs: IProjectSpecs }) => {
     return (
-        <div className="text-gray-700 pb-6 border-b border-gray-300">
-            {period}
-            <br />
-            {teamInfo}
-            <div className="sm:max-w-xl xl:max-w-max mt-1.5">
-                {skills.map((skill, index) => (
-                    <span
-                        key={index}
-                        className="inline-block px-2.5 py-1 mr-1 font-inconsolata text-sm rounded-2xl border border-gray-700 whitespace-nowrap leading-none"
-                    >
-                        {skill}
-                    </span>
-                ))}
-            </div>
-        </div>
+        <header className="text-gray-700 pb-6 border-b border-gray-300">
+            <p>{period}</p>
+            <p>{teamInfo}</p>
+            {skills.all ? (
+                <ul className="sm:max-w-xl xl:max-w-max mt-1.5">
+                    {skills.all.map((skill, index) => (
+                        <li
+                            key={index}
+                            className="inline-block px-2.5 py-1 mr-1 font-inconsolata text-sm rounded-2xl border border-gray-700 whitespace-nowrap leading-none"
+                        >
+                            {skill}
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <>
+                    {Object.entries(skills).map(([category, skillList]) => (
+                        <div key={category}>
+                            <span className="mr-2">{category}</span>
+                            <ul className="inline">
+                                {skillList.map((skill, index) => (
+                                    <li
+                                        key={index}
+                                        className="inline-block px-2.5 py-1 mr-1 font-inconsolata text-sm rounded-2xl border border-gray-700 whitespace-nowrap leading-none"
+                                    >
+                                        {skill}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </>
+            )}
+        </header>
     );
 };
 export default Specs;
