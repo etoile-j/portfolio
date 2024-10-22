@@ -1,8 +1,9 @@
 import Specs from "./specs";
+import Links from "./links";
 import { IProjectData } from "@/types";
 
 const ProjectCard = ({
-    projectData: { title, titleDescription, specs, highlights },
+    projectData: { title, titleDescription, specs, highlights, links },
 }: {
     projectData: IProjectData;
 }) => {
@@ -27,6 +28,7 @@ const ProjectCard = ({
                             ))}
                         </ul>
                     </div>
+                    <Links links={links} imgFile={title} />
                 </div>
             </div>
         </>
