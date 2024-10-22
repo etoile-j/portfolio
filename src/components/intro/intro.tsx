@@ -15,7 +15,7 @@ const Intro = () => {
             </div>
             <div className="sm:ml-12 lg:ml-28 xl:ml-36 2xl:mx-56 absolute text-white">
                 {/* <div className="absolute top-[-80px] left-[-50px] [height:_clamp(250px,35vw,350px)] [width:_clamp(250px,35vw,350px)] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm rounded-full origin-center animate-grow" /> */}
-                <div className="absolute sm:top-[-70px] md:top-[-100px] left-[-50px] w-[260px] h-[260px] md:w-[350px] md:h-[350px] key-gradient drop-shadow-sm rounded-full origin-center animate-grow" />
+                <div className="absolute sm:top-[-70px] md:top-[-100px] left-[-50px] w-[260px] h-[260px] md:w-[350px] md:h-[350px] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm rounded-full origin-center animate-grow" />
                 {/* <h1 className="font-rubik font-bold leading-tight [font-size:_clamp(2.8rem,7.6vw,3.75rem)]"> */}
                 <h1 className="font-rubik font-bold text-5xl md:text-6xl">
                     <span
