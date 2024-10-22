@@ -27,6 +27,10 @@ body {
 }
 
 @layer utilities {
+    .key-gradient {
+        @apply bg-gradient-to-r from-violet-400 via-blue-200 to-fuchsia-300;
+    }
+
     .text-balance {
         text-wrap: balance;
     }
