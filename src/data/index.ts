@@ -1,1 +1,1 @@
-export { projects } from "./projects";
+export { meetsin, ourshop, whobego } from "./projects";
