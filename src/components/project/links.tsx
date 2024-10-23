@@ -31,7 +31,7 @@ const Links = ({ links, imgFile }: ILinksProps) => {
                                         href={links[linkKey]}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center pl-1 w-[40px] h-[40px] backdrop-blur rounded-full border-violet-400 border-2 overflow-hidden transition-all duration-300 hover:w-[110px] group drop-shadow"
+                                        className="flex items-center pl-1 w-[40px] h-[40px] backdrop-blur rounded-full border-violet-400 border-2 overflow-hidden transition-all duration-300 hover:w-[110px] group"
                                     >
                                         <img
                                             src={`/img/icon/${linkNameMap[linkKey]}.svg`}
