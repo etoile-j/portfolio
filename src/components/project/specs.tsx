@@ -6,7 +6,7 @@ const Specs = ({ specs: { period, teamInfo, skills } }: { specs: IProjectSpecs }
             <p>{period}</p>
             <p>{teamInfo}</p>
             {skills.all ? (
-                <ul className="sm:max-w-xl xl:max-w-max mt-1.5">
+                <ul className="max-w-xl mt-1.5">
                     {skills.all.map((skill, index) => (
                         <li
                             key={index}
