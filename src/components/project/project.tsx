@@ -17,7 +17,7 @@ const Project = () => {
     const { isVisible: isVisibleWhobego } = useSlideUp(whobegoRef, 0.2);
 
     return (
-        <section className="max-w-[1200px] mx-auto">
+        <section className="max-w-[1300px] mx-auto">
             <h2 className={isVisible ? "animate-slideUp" : ""} ref={sectionTitleRef}>
                 Project
             </h2>
