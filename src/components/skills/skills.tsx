@@ -15,7 +15,7 @@ const feIcons = [
     "Jest",
 ];
 
-const etcIcons = ["Git", "Github", "GithubActions", "Notion", "Figma", "Jira"];
+const etcIcons = ["Git", "GitHub", "GitHubActions", "Notion", "Figma", "Jira"];
 
 const Skills = () => {
     const sectionTitleRef = useRef<HTMLHeadingElement | null>(null);
@@ -26,8 +26,12 @@ const Skills = () => {
 
     const renderIcons = (icons: string[]) => (
         <ul className="flex flex-wrap justify-center gap-3.5 md:gap-6 xl:gap-10 drop-shadow">
-            {icons.map((icon) => (
-                <li key={icon}>
+            {icons.map((icon, index) => (
+                <li
+                    key={icon}
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                    className={`opacity-0 ${isVisibleSkills ? "animate-slideUpFast" : ""}`}
+                >
                     <Image
                         src={`/img/icon/${icon}.svg`}
                         alt={icon}
@@ -41,7 +45,7 @@ const Skills = () => {
     );
 
     return (
-        <section>
+        <section className="mb-28">
             <h2 ref={sectionTitleRef} className={`opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
                 Skills
             </h2>

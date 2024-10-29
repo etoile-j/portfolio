@@ -14,28 +14,23 @@ const Intro = () => {
                 />
             </div>
             <div className="sm:ml-12 lg:ml-28 xl:ml-36 2xl:mx-56 absolute text-white">
-                {/* <div className="absolute top-[-80px] left-[-50px] [height:_clamp(250px,35vw,350px)] [width:_clamp(250px,35vw,350px)] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm rounded-full origin-center animate-grow" /> */}
                 <div className="absolute sm:top-[-70px] md:top-[-100px] left-[-50px] w-[260px] h-[260px] md:w-[350px] md:h-[350px] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm rounded-full origin-center animate-grow" />
-                {/* <h1 className="font-rubik font-bold leading-tight [font-size:_clamp(2.8rem,7.6vw,3.75rem)]"> */}
                 <h1 className="font-rubik font-bold text-5xl md:text-6xl">
                     <span
-                        className="inline-block animate-slideInLeft invisible opacity-0 drop-shadow-sm tracking-wider"
-                        style={{ animationDelay: "0.4s" }}
+                        className="inline-block animate-slideInLeft opacity-0 drop-shadow-sm tracking-wider"
+                        style={{ animationDelay: "0.3s" }}
                     >
                         LIM SUJIN
                     </span>
                     <br />
                     <span
-                        className="inline-block font-poppins italic animate-slideDown invisible opacity-0"
-                        style={{ animationDelay: "1s" }}
+                        className="inline-block font-poppins italic animate-flipDown opacity-0"
+                        style={{ animationDelay: "0.8s" }}
                     >
                         FRONTEND DEVELOPER
                     </span>
                 </h1>
-                <div
-                    className="animate-slideDown invisible opacity-0"
-                    style={{ animationDelay: "1.3s" }}
-                >
+                <div className="animate-flipDown opacity-0" style={{ animationDelay: "1.1s" }}>
                     <div className="w-[320px] mt-12 mb-1.5 border-y-4 border-white">
                         <p className="py-4 pl-2">안녕하세요!</p>
                     </div>
@@ -43,7 +38,7 @@ const Intro = () => {
                 </div>
             </div>
             <Image
-                className="absolute inset-x-2/4 bottom-12 animate-bounce"
+                className="absolute bottom-12 animate-bounce"
                 src={scrollDownIcon}
                 alt="스크롤 다운 유도 아이콘"
             />
