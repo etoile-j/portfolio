@@ -38,7 +38,7 @@ const Intro = () => {
                 </div>
             </div>
             <Image
-                className="absolute bottom-12 animate-bounce"
+                className="absolute bottom-12 animate-bounce lg:inset-x-2/4"
                 src={scrollDownIcon}
                 alt="스크롤 다운 유도 아이콘"
             />
