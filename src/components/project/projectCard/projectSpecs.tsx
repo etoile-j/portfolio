@@ -1,6 +1,6 @@
 import { IProjectSpecs } from "@/types";
 
-const Specs = ({ specs: { period, teamInfo, skills } }: { specs: IProjectSpecs }) => {
+const ProjectSpecs = ({ specs: { period, teamInfo, skills } }: { specs: IProjectSpecs }) => {
     return (
         <header className="text-gray-700 pb-6 border-b border-gray-300">
             <p>{period}</p>
@@ -38,4 +38,4 @@ const Specs = ({ specs: { period, teamInfo, skills } }: { specs: IProjectSpecs }
         </header>
     );
 };
-export default Specs;
+export default ProjectSpecs;

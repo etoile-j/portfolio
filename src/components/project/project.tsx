@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import ProjectCard from "./projectCard";
+import ProjectCard from "./projectCard/projectCard";
 import useSlideUp from "@/hooks/useSlideUp";
 import { projects } from "@/data";
 import { IProjectData } from "@/types";

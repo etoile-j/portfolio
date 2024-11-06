@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import Specs from "./specs";
-import Links from "./links";
+import ProjectSpecs from "./projectSpecs";
+import ProjectLinks from "./projectLinks";
 import useSlideUp from "@/hooks/useSlideUp";
 import { IProjectData } from "@/types";
 
@@ -21,7 +21,7 @@ const ProjectCard = ({
             <div className="mt-6 mb-20">
                 <div className="flex lg:justify-normal lg:flex-nowrap flex-wrap-reverse bg-gray-100 rounded-3xl">
                     <div className="p-7 md:p-9 min-w-fit break-keep">
-                        <Specs specs={specs} />
+                        <ProjectSpecs specs={specs} />
                         <ul className="pt-6">
                             {highlights.map((highlight, index) => (
                                 <li key={index}>
@@ -33,7 +33,7 @@ const ProjectCard = ({
                             ))}
                         </ul>
                     </div>
-                    <Links links={links} imgFile={title} />
+                    <ProjectLinks links={links} imgFile={title} />
                 </div>
             </div>
         </article>
