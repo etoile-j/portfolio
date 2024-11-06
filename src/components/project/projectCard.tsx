@@ -1,5 +1,7 @@
+import { useRef } from "react";
 import Specs from "./specs";
 import Links from "./links";
+import useSlideUp from "@/hooks/useSlideUp";
 import { IProjectData } from "@/types";
 
 const ProjectCard = ({
@@ -7,8 +9,11 @@ const ProjectCard = ({
 }: {
     projectData: IProjectData;
 }) => {
+    const cardRef = useRef<HTMLDivElement | null>(null);
+    const { isVisible } = useSlideUp(cardRef, 0.2);
+
     return (
-        <>
+        <article ref={cardRef} className={`opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
             <div className="ml-2.5">
                 <div>{titleDescription}</div>
                 <h3 className="font-poppins italic text-3xl">{title}</h3>
@@ -31,7 +36,7 @@ const ProjectCard = ({
                     <Links links={links} imgFile={title} />
                 </div>
             </div>
-        </>
+        </article>
     );
 };
 export default ProjectCard;
