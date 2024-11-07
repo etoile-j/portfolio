@@ -3,7 +3,7 @@ import scrollDownIcon from "/public/img/icon/down-arrow.svg";
 
 const Intro = () => {
     return (
-        <section className="lg:items-start flex h-screen w-screen flex-col items-center justify-center">
+        <section className="lg:items-start fixed flex h-screen w-screen flex-col items-center justify-center">
             <div>
                 <video
                     className="object-cover w-screen h-screen"

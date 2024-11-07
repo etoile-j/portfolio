@@ -6,11 +6,14 @@ import Footer from "@/components/footer/footer";
 const Home = () => {
     return (
         <>
-            <main>
+            <main className="relative">
                 <Intro />
-                <div className="md:mx-24 xl:mx-32 text-center">
-                    <Skills />
-                    <Project />
+                <div className="relative z-10">
+                    <div className="h-screen" />
+                    <div className="md:px-24 xl:px-32 text-center bg-white">
+                        <Skills />
+                        <Project />
+                    </div>
                 </div>
             </main>
             <Footer />
