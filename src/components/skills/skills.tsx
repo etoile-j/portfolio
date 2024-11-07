@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
-import useSlideUp from "@/hooks/useSlideUp";
 import Image from "next/image";
+import useSlideUp from "@/hooks/useSlideUp";
 
 const feIcons = [
     "HTML",
@@ -18,10 +18,7 @@ const feIcons = [
 const etcIcons = ["Git", "GitHub", "GitHubActions", "Notion", "Figma", "Jira"];
 
 const Skills = () => {
-    const sectionTitleRef = useRef<HTMLHeadingElement | null>(null);
     const skillsDiv = useRef<HTMLDivElement | null>(null);
-
-    const { isVisible } = useSlideUp(sectionTitleRef);
     const { isVisible: isVisibleSkills } = useSlideUp(skillsDiv);
 
     const renderIcons = (icons: string[]) => (
@@ -46,9 +43,7 @@ const Skills = () => {
 
     return (
         <section className="mb-28">
-            <h2 ref={sectionTitleRef} className={`opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
-                Skills
-            </h2>
+            <h2>Skills</h2>
             <div
                 ref={skillsDiv}
                 className={`opacity-0 ${isVisibleSkills ? "animate-slideUp" : ""}`}
