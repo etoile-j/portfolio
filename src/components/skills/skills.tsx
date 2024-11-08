@@ -43,7 +43,7 @@ const Skills = () => {
 
     return (
         <section className="mb-28">
-            <h2>Skills</h2>
+            <h2 id="skills">Skills</h2>
             <div
                 ref={skillsDiv}
                 className={`opacity-0 ${isVisibleSkills ? "animate-slideUp" : ""}`}
