@@ -1,43 +1,33 @@
 import Image from "next/image";
-import { projects } from "@/data";
+import { projects, socialLinks } from "@/data";
 
 const NavigationMenu = () => {
     return (
         <nav className="w-[214px] px-5 py-6 bg-white text-left rounded-2xl border border-gray-200 shadow-md">
             <ul className="pb-4">
-                <li className="mb-2">
-                    <a
-                        href="https://github.com/etoile-j"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center w-full py-1 hover:bg-gray-100 hover:rounded-2xl"
-                    >
-                        <Image
-                            src="/img/icon/GitHub.svg"
-                            alt="GitHub"
-                            width={24}
-                            height={24}
-                            className="ml-4 mr-2.5"
-                        />
-                        <span>GitHub</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="mailto:etoile.1jjj@gmail.com"
-                        className="flex items-center w-full py-1 hover:bg-gray-100 hover:rounded-2xl"
-                    >
-                        <Image
-                            src="/img/icon/email.svg"
-                            alt="Email"
-                            width={24}
-                            height={24}
-                            className="ml-4 mr-2.5"
-                        />
-                        <span>Email</span>
-                    </a>
-                </li>
+                {socialLinks.map((link) => (
+                    <li key={link.title} className="mb-2">
+                        <a
+                            href={link.url}
+                            {...(link.isExternal && {
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                            })}
+                            className="flex items-center w-full py-1 hover:bg-gray-100 hover:rounded-2xl"
+                        >
+                            <Image
+                                src={link.icon}
+                                alt={link.title}
+                                width={24}
+                                height={24}
+                                className="ml-4 mr-2.5"
+                            />
+                            <span>{link.title}</span>
+                        </a>
+                    </li>
+                ))}
             </ul>
+
             <ol className="pt-4 border-t border-gray-200">
                 <li className="h-8 relative nav-item mb-1">
                     <a
