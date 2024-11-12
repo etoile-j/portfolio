@@ -23,7 +23,7 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
             >
                 <Image
                     className="max-w-[360px] lg:max-w-[660px] pt-5"
-                    src={`/img/${imgFile}.png`}
+                    src={`/img/icon/${imgFile}.png`}
                     alt="프로젝트 대표 이미지"
                     width={690}
                     height={400}
