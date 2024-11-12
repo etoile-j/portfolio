@@ -23,9 +23,9 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
             >
                 <Image
                     className="max-w-[360px] lg:max-w-[660px] pt-5"
-                    src={`/img/icon/${imgFile}.png`}
+                    src={`/images/${imgFile}.png`}
                     alt="프로젝트 대표 이미지"
-                    width={690}
+                    width={660}
                     height={400}
                 />
 
@@ -39,7 +39,7 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
                                 className="flex items-center pl-1 w-[40px] h-[40px] backdrop-blur rounded-full border-violet-400 border-2 overflow-hidden transition-all duration-300 hover:w-[110px] group"
                             >
                                 <Image
-                                    src={`/img/icon/${LINK_NAME_MAP[key]}.svg`}
+                                    src={`/images/icons/${LINK_NAME_MAP[key]}.svg`}
                                     className="inline-block w-[28px] h-[28px] rounded-full"
                                     alt={LINK_NAME_MAP[key]}
                                     width={28}

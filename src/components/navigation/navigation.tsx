@@ -24,7 +24,7 @@ const Navigation = () => {
                 className="w-14 h-14 mr-2 p-3.5 bg-violet-400 rounded-full border border-gray-200 shadow-lg opacity-40 hover:opacity-100"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-                <Image src="/img/icon/menu.svg" alt="메뉴 아이콘" width={28} height={28} />
+                <Image src="/images/icons/menu.svg" alt="메뉴 아이콘" width={28} height={28} />
             </button>
 
             {isMenuOpen && (

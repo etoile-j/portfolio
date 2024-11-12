@@ -1,5 +1,5 @@
 import Image from "next/image";
-import scrollDownIcon from "/public/img/icon/down-arrow.svg";
+import scrollDownIcon from "/public/images/icons/downArrow.svg";
 
 const Intro = () => {
     return (
