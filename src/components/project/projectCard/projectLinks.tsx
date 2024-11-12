@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Image from "next/image";
 import { IProjectLinks } from "@/types";
 import useSlideUp from "@/hooks/useSlideUp";
 
@@ -20,10 +21,12 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
                 ref={imgRef}
                 className={`relative opacity-0 ${isVisible ? "animate-slideInRight" : ""}`}
             >
-                <img
-                    className="max-w-[360px] lg:max-w-[690px] pt-5"
+                <Image
+                    className="max-w-[360px] lg:max-w-[660px] pt-5"
                     src={`/img/${imgFile}.png`}
                     alt="프로젝트 대표 이미지"
+                    width={690}
+                    height={400}
                 />
 
                 <ul className="absolute bottom-[20px] flex gap-2 lg:flex-col-reverse">
@@ -35,10 +38,12 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
                                 rel="noopener noreferrer"
                                 className="flex items-center pl-1 w-[40px] h-[40px] backdrop-blur rounded-full border-violet-400 border-2 overflow-hidden transition-all duration-300 hover:w-[110px] group"
                             >
-                                <img
+                                <Image
                                     src={`/img/icon/${LINK_NAME_MAP[key]}.svg`}
                                     className="inline-block w-[28px] h-[28px] rounded-full"
                                     alt={LINK_NAME_MAP[key]}
+                                    width={28}
+                                    height={28}
                                 />
                                 <span className="opacity-0 transition-opacity duration-300 ml-1.5 group-hover:opacity-100 font-bold bg-clip-text text-transparent key-gradient">
                                     {LINK_NAME_MAP[key]}
