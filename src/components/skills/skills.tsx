@@ -39,7 +39,13 @@ const Skills = () => {
                 </li>
             ))}
             {/*  테스트 */}
-            <Image src={`/img/icon/meetsin.png`} alt="테스트" width={300} height={300} />
+            <Image
+                src={`/img/icon/meetsin.png`}
+                alt="테스트"
+                width={660}
+                height={400}
+                className="max-w-[360px] lg:max-w-[660px] pt-5"
+            />
         </ul>
     );
 
