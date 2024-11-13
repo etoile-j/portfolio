@@ -2,20 +2,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import useSlideUp from "@/hooks/useSlideUp";
-
-const feIcons = [
-    "HTML",
-    "CSS",
-    "Sass",
-    "StyledComponents",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Jotai",
-    "Jest",
-];
-
-const etcIcons = ["Git", "GitHub", "GitHubActions", "Notion", "Figma", "Jira"];
+import { feIcons, etcIcons } from "@/data";
 
 const Skills = () => {
     const skillsDiv = useRef<HTMLDivElement | null>(null);
