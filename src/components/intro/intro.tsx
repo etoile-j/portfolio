@@ -32,9 +32,12 @@ const Intro = () => {
                 </h1>
                 <div className="animate-flipDown opacity-0" style={{ animationDelay: "1.1s" }}>
                     <div className="w-[320px] mt-12 mb-1.5 border-y-4 border-white">
-                        <p className="py-4 pl-2">안녕하세요!</p>
+                        <p className="py-4 pl-2">
+                            안녕하세요! 부딪히고 깨져서 해내는
+                            <br /> 개발자 임수진입니다.
+                        </p>
                     </div>
-                    <p className="pl-2 text-gray-200">2024.10.</p>
+                    <p className="pl-2 text-gray-200">2024.11.</p>
                 </div>
             </div>
             <Image
