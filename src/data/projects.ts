@@ -1,5 +1,5 @@
 export const meetsin = {
-    title: "meetsin",
+    title: "MEETSIN",
     titleDescription: "실시간 비대면 스터디룸 서비스",
     specs: {
         period: "2023.09 - 진행 중",
