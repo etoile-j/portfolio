@@ -20,7 +20,9 @@ const ProjectSpecs = ({ specs: { period, teamInfo, skills } }: { specs: IProject
                 <>
                     {Object.entries(skills).map(([category, skillList]) => (
                         <div key={category}>
-                            <span className="mr-2">{category}</span>
+                            <span className="max-[480px]:block max-[470px]:pt-2 mr-2">
+                                · {category}
+                            </span>
                             <ul className="inline">
                                 {skillList.map((skill, index) => (
                                     <li
