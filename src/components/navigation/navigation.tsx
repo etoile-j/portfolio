@@ -28,7 +28,7 @@ const Navigation = () => {
             </button>
 
             {isMenuOpen && (
-                <div className="absolute top-16">
+                <div className="absolute top-16 right-7">
                     <NavigationMenu />
                 </div>
             )}
