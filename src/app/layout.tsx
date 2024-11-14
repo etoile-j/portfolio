@@ -32,7 +32,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
         <html lang="ko" className="scroll-smooth">
             <body
-                className={`min-w-[375px] ${notoSansKR.className} ${rubik.variable} ${poppins.variable} ${inconsolata.variable}`}
+                className={`min-w-[340px] ${notoSansKR.className} ${rubik.variable} ${poppins.variable} ${inconsolata.variable}`}
             >
                 {children}
             </body>

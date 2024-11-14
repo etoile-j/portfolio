@@ -19,10 +19,10 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
         <div className="flex items-center mx-auto">
             <div
                 ref={imgRef}
-                className={`relative opacity-0 ${isVisible ? "animate-slideInRight" : ""}`}
+                className={`relative opacity-0 ${isVisible ? "animate-slideInRight" : ""} p-10`}
             >
                 <Image
-                    className="max-w-[340px] lg:max-w-[660px] pt-5"
+                    className="w-full max-w-[450px] lg:max-w-[660px] h-auto"
                     src={`/images/${imgFile}.png`}
                     alt="프로젝트 대표 이미지"
                     width={660}

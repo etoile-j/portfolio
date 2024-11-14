@@ -3,18 +3,18 @@ import scrollDownIcon from "/public/images/icons/downArrow.svg";
 
 const Intro = () => {
     return (
-        <section className="lg:items-start fixed flex h-screen w-screen flex-col items-center justify-center">
-            <div>
+        <section className="lg:items-start fixed flex h-screen w-full flex-col items-center justify-center overflow-hidden">
+            <div className="w-full">
                 <video
-                    className="object-cover w-screen h-screen"
+                    className="object-cover w-full h-screen"
                     src="/intro.mp4"
                     autoPlay
                     muted
                     loop
                 />
             </div>
-            <div className="sm:ml-12 lg:ml-28 xl:ml-36 2xl:mx-56 absolute text-white">
-                <div className="absolute sm:top-[-70px] md:top-[-100px] left-[-50px] w-[260px] h-[260px] md:w-[350px] md:h-[350px] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm rounded-full origin-center animate-grow" />
+            <div className="ml-4 sm:ml-12 lg:ml-28 xl:ml-36 2xl:mx-56 absolute text-white">
+                <div className="absolute top-[-70px] md:top-[-100px] left-[-50px] w-[260px] h-[260px] md:w-[350px] md:h-[350px] bg-gradient-to-r from-yellow-400 to-yellow-300 drop-shadow-sm rounded-full origin-center animate-grow" />
                 <h1 className="font-rubik font-bold text-5xl md:text-6xl">
                     <span
                         className="inline-block animate-slideInLeft opacity-0 drop-shadow-sm tracking-wider"
@@ -24,7 +24,7 @@ const Intro = () => {
                     </span>
                     <br />
                     <span
-                        className="inline-block font-poppins italic animate-flipDown opacity-0"
+                        className="inline-block mt-1.5 font-poppins italic animate-flipDown opacity-0"
                         style={{ animationDelay: "0.8s" }}
                     >
                         FRONTEND DEVELOPER
