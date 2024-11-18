@@ -10,11 +10,11 @@ const Project = () => {
     const { isVisible } = useSlideUp(sectionTitleRef);
 
     return (
-        <section className="max-w-[1300px] mx-auto">
+        <section className="max-w-[1190px] mx-auto">
             <h2 className={isVisible ? "animate-slideUp" : ""} ref={sectionTitleRef}>
                 Projects
             </h2>
-            <div className="text-left lg:overflow-hidden">
+            <div className="text-left xl:overflow-hidden">
                 {projects.map((project: IProjectData) => (
                     <ProjectCard key={project.title} projectData={project} />
                 ))}

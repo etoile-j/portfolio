@@ -32,13 +32,13 @@ const NavigationMenu = () => {
                 <li className="h-8 relative nav-item mb-1">
                     <a
                         href="#skills"
-                        className="flex items-center pl-4 font-bold text-gray-700 text-lg hover:text-violet-400"
+                        className="flex items-center pl-4 font-bold text-lg hover:text-violet-400"
                     >
                         <span>Skills</span>
                     </a>
                 </li>
                 <li>
-                    <div className="h-8 pl-4 font-bold text-lg">Projects</div>
+                    <div className="h-8 pl-4 font-bold text-gray-600 text-lg">Projects</div>
                     <ol className="font-normal text-base">
                         {projects.map((project) => (
                             <li key={project.title} className="relative nav-item pl-9 mt-1">

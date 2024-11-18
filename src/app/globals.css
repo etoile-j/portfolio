@@ -39,7 +39,7 @@ body {
 @layer components {
     .nav-item::before {
         content: "";
-        @apply absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-4 bg-white;
+        @apply absolute left-0 top-[45%] -translate-y-1/2 w-0.5 h-4 bg-white;
     }
 
     .nav-item:hover::before {

@@ -22,7 +22,7 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
                 className={`relative opacity-0 ${isVisible ? "animate-slideInRight" : ""} p-10`}
             >
                 <Image
-                    className="w-full max-w-[450px] lg:max-w-[660px] h-auto"
+                    className="w-full xl:w-auto min-w-[340px] max-w-[465px] xl:max-w-[640px] pt-5"
                     src={`/images/${imgFile}.png`}
                     alt="프로젝트 대표 이미지"
                     width={660}

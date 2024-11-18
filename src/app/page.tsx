@@ -3,6 +3,7 @@ import Skills from "@/components/skills/skills";
 import Project from "@/components/project/project";
 import Footer from "@/components/footer/footer";
 import Navigation from "@/components/navigation/navigation";
+import NavigationMenu from "@/components/navigation/navigationMenu";
 
 const Home = () => {
     return (
@@ -11,13 +12,20 @@ const Home = () => {
                 <Intro />
                 <div className="relative z-10">
                     <div className="h-screen" />
-                    <div className="relative md:px-24 xl:px-32 text-center bg-white">
-                        <div className="relative">
-                            <Skills />
-                            <div className="z-10 sticky top-8">
-                                <Navigation />
+                    <div className="relative md:px-7 xl:px-32 text-center bg-white">
+                        <div className="relative flex justify-center">
+                            <div className="hidden md:block w-[234px] pt-16 shrink-0">
+                                <div className="sticky top-16 left-8">
+                                    <NavigationMenu />
+                                </div>
                             </div>
-                            <Project />
+                            <div className="flex-1 max-w-[1190px]">
+                                <Skills />
+                                <div className="md:hidden z-10 sticky top-8">
+                                    <Navigation />
+                                </div>
+                                <Project />
+                            </div>
                         </div>
                     </div>
                 </div>

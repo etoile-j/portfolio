@@ -19,7 +19,7 @@ const ProjectCard = ({
                 <h3 className="font-poppins italic text-3xl">{title}</h3>
             </div>
             <div className="mt-6 pb-20">
-                <div className="flex lg:justify-normal lg:flex-nowrap flex-wrap-reverse bg-gray-100 rounded-3xl">
+                <div className="flex xl:justify-normal xl:flex-nowrap flex-wrap-reverse bg-gray-100 rounded-3xl">
                     <div className="p-7 md:p-9 min-w-fit break-keep">
                         <ProjectSpecs specs={specs} />
                         <ul className="pt-6">
