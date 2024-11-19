@@ -1,7 +1,33 @@
+"use client";
 import Image from "next/image";
+import { useState, useEffect, useCallback } from "react";
 import { projects, socialLinks } from "@/data";
 
 const NavigationMenu = () => {
+    const [visibleArea, setVisibleArea] = useState("");
+
+    const handleIntersect = useCallback((entries: IntersectionObserverEntry[]) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setVisibleArea(entry.target.id);
+            }
+        });
+    }, []);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(handleIntersect, {
+            threshold: 0.15,
+        });
+
+        const areas = ["skills", ...projects.map((p) => p.title)];
+        areas.forEach((area) => {
+            const element = document.getElementById(area);
+            if (element) observer.observe(element);
+        });
+
+        return () => observer.disconnect();
+    }, [handleIntersect]);
+
     return (
         <nav className="w-[214px] px-5 py-6 bg-white text-left rounded-2xl border border-gray-200 shadow-md">
             <ul className="pb-4">
@@ -32,7 +58,9 @@ const NavigationMenu = () => {
                 <li className="h-8 relative nav-item mb-1">
                     <a
                         href="#skills"
-                        className="flex items-center pl-4 font-bold text-lg hover:text-violet-400"
+                        className={`flex items-center pl-4 font-bold text-lg hover:text-violet-400 ${
+                            visibleArea === "skills" ? "text-violet-400" : ""
+                        }`}
                     >
                         <span>Skills</span>
                     </a>
@@ -44,7 +72,9 @@ const NavigationMenu = () => {
                             <li key={project.title} className="relative nav-item pl-9 mt-1">
                                 <a
                                     href={`#${project.title}`}
-                                    className="block w-full hover:text-violet-400"
+                                    className={`block w-full hover:text-violet-400 ${
+                                        visibleArea === project.title ? "text-violet-400" : ""
+                                    }`}
                                 >
                                     {project.title}
                                 </a>
