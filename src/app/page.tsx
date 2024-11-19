@@ -19,7 +19,7 @@ const Home = () => {
                                     <NavigationMenu />
                                 </div>
                             </div>
-                            <div className="flex-1 max-w-[1190px]">
+                            <div className="flex-1 w-full max-w-[1190px]">
                                 <Skills />
                                 <div className="md:hidden z-10 sticky top-8">
                                     <Navigation />
