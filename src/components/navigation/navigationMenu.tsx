@@ -1,32 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect, useCallback } from "react";
-import { projects, socialLinks } from "@/data";
+import { socialLinks, projects } from "@/data";
+import { useVisibleArea } from "@/hooks/useVisibleArea";
 
 const NavigationMenu = () => {
-    const [visibleArea, setVisibleArea] = useState("");
-
-    const handleIntersect = useCallback((entries: IntersectionObserverEntry[]) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                setVisibleArea(entry.target.id);
-            }
-        });
-    }, []);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(handleIntersect, {
-            threshold: 0.15,
-        });
-
-        const areas = ["skills", ...projects.map((p) => p.title)];
-        areas.forEach((area) => {
-            const element = document.getElementById(area);
-            if (element) observer.observe(element);
-        });
-
-        return () => observer.disconnect();
-    }, [handleIntersect]);
+    const visibleArea = useVisibleArea();
 
     return (
         <nav className="w-[214px] px-5 py-6 bg-white text-left rounded-2xl border border-gray-200 shadow-md">
@@ -86,4 +64,5 @@ const NavigationMenu = () => {
         </nav>
     );
 };
+
 export default NavigationMenu;
