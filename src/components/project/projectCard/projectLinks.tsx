@@ -45,7 +45,7 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
                                     width={28}
                                     height={28}
                                 />
-                                <span className="opacity-0 transition-opacity duration-300 ml-1.5 group-hover:opacity-100 font-bold bg-clip-text text-transparent key-gradient">
+                                <span className="opacity-0 transition-opacity duration-300 ml-1.5 group-hover:opacity-100 font-bold text-violet-400">
                                     {LINK_NAME_MAP[key]}
                                 </span>
                             </a>
