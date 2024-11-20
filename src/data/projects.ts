@@ -1,3 +1,31 @@
+export const portfolio = {
+    title: "포트폴리오",
+    titleDescription: "(현재 페이지)",
+    specs: {
+        period: "2024.10 - 11 (21일)",
+        teamInfo: "개인 프로젝트",
+        skills: { all: ["Next.js", "TypeScript", "TailwindCSS"] },
+    },
+    highlights: [
+        {
+            title: "Next.js를 사용한 SSG 구현",
+            description: `현재 포트폴리오는 사용자의 요청에 따른 렌더링이 필요 없기 때문에
+            정적 사이트 생성을 위해 Next.js를 선택하였습니다.
+            
+            모든 콘텐츠를 코드에 직접 작성하고, 이미지 등의 리소스를 미리 빌드된 파일로 제공했습니다.`,
+        },
+        {
+            title: "Intersection Observer API 활용",
+            description: `Intersection Observer API를 활용해 화면에 보이는 요소를 감지하고
+            이를 기반으로 애니메이션과 네비게이션을 동적으로 업데이트하는 기능을 개발했습니다.
+            이를 통해 사용자에게 맥락에 맞는 정보와 시각적 효과를 효과적으로 제공했습니다.`,
+        },
+    ],
+    links: {
+        github: "https://github.com/etoile-j/portfolio",
+    },
+};
+
 export const meetsin = {
     title: "MEETSIN",
     titleDescription: "실시간 비대면 스터디룸 서비스",
@@ -167,4 +195,4 @@ export const whobego = {
     },
 };
 
-export const projects = [meetsin, ourshop, whobego];
+export const projects = [portfolio, meetsin, ourshop, whobego];
