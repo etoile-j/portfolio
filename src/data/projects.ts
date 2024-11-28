@@ -23,6 +23,7 @@ export const portfolio = {
     ],
     links: {
         github: "https://github.com/etoile-j/portfolio",
+        figma: "https://www.figma.com/design/8RLRG95t68BXylSZi3kced/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?m=auto&t=GBAnlRgTNpxo3dAy-6",
     },
 };
 
