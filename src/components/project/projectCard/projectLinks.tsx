@@ -29,7 +29,7 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
                     height={400}
                 />
 
-                <ul className="absolute bottom-[20px] flex gap-2 lg:flex-col-reverse">
+                <ul className="absolute bottom-[20px] flex gap-2 2xl:flex-col-reverse">
                     {(Object.keys(links) as LinkKey[]).map((key) => (
                         <li key={key}>
                             <a
