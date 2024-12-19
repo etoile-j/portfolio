@@ -35,7 +35,7 @@ export const meetsin = {
         teamInfo: "팀 프로젝트 (3인) | 프론트엔드, 백엔드, 디자인 담당",
         skills: {
             공통: ["TypeScript", "Socket.IO", "GitHub Actions"],
-            프론트엔드: ["Next.js", "TanStack Query", "Jotai", "SCSS", "Phaser"],
+            프론트엔드: ["Next.js", "TanStack Query", "Jotai", "Sass", "Phaser"],
             백엔드: ["NestJS", "MongoDB", "Mongoose", "AWS EC2", "Nginx"],
         },
     },
@@ -187,7 +187,7 @@ export const whobego = {
         },
         {
             title: "CSS 전처리기 Sass 사용",
-            description: `Sass 사용을 통해 반복되는 코드의 변수화로 재사용성이 높아져 개발 시간이 절약되었고
+            description: `Sass(SCSS) 사용을 통해 반복되는 코드의 변수화로 재사용성이 높아져 개발 시간이 절약되었고
            중첩 및 상속을 통해 구조화된 코드를 사용해 가독성을 향상시켰습니다.`,
         },
     ],
