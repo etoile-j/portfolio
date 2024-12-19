@@ -85,6 +85,7 @@ export const meetsin = {
     links: {
         github: "https://github.com/FE-Ocean/meetsin",
         figma: "https://www.figma.com/design/VUQzx7GqN5G2Eo89XrX09q/MEETSIN-figma?m=auto&t=VgUsW6OubegAx3QF-6",
+        liveService: "https://meetsin.link",
     },
 };
 
