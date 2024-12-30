@@ -21,7 +21,7 @@ const NavigationMenu = () => {
                         >
                             <Image
                                 src={link.icon}
-                                alt={link.title}
+                                alt=""
                                 width={24}
                                 height={24}
                                 className="ml-4 mr-2.5"
