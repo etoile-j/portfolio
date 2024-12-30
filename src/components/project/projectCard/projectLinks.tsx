@@ -28,7 +28,7 @@ const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: strin
                                 href={links[key]}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center pl-1 w-[40px] h-[40px] backdrop-blur rounded-full border-violet-400 border-2 overflow-hidden transition-all duration-300 hover:w-[110px] group"
+                                className="flex items-center pl-1 w-[40px] h-[40px] bg-white rounded-full border-violet-400 border-2 overflow-hidden transition-all duration-300 hover:w-[110px] group"
                             >
                                 <Image
                                     src={`/images/icons/${LINK_NAME_MAP[key]}.svg`}
