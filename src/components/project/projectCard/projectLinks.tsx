@@ -1,7 +1,5 @@
-import { useRef } from "react";
 import Image from "next/image";
 import { IProjectLinks } from "@/types";
-import useSlideUp from "@/hooks/useSlideUp";
 
 const LINK_NAME_MAP = {
     github: "GitHub",
@@ -12,15 +10,9 @@ const LINK_NAME_MAP = {
 type LinkKey = keyof typeof LINK_NAME_MAP;
 
 const ProjectLinks = ({ links, imgFile }: { links: IProjectLinks; imgFile: string }) => {
-    const imgRef = useRef<HTMLDivElement | null>(null);
-    const { isVisible } = useSlideUp(imgRef, 0.2);
-
     return (
         <div className="flex items-center mx-auto">
-            <div
-                ref={imgRef}
-                className={`relative opacity-0 ${isVisible ? "animate-slideInRight" : ""} p-10`}
-            >
+            <div className="relative p-10">
                 <Image
                     className="w-full xl:w-auto min-w-0 md:min-w-[300px] max-w-[465px] xl:max-w-[640px] pt-5"
                     src={`/images/${imgFile}.png`}

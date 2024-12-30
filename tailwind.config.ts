@@ -8,7 +8,7 @@ const config: Config = {
                 sm: "375px",
             },
             fontFamily: {
-                poppins: ["var(--font-poppins)", "sans-serif"],
+                poppins: ["var(--font-poppins)", "Inter"],
                 rubik: ["var(--font-rubik)", "sans-serif"],
                 inconsolata: ["var(--font-inconsolata)", "sans-serif"],
             },
@@ -38,16 +38,11 @@ const config: Config = {
                     "0%": { opacity: "0", transform: "translateX(-40px)", visibility: "visible" },
                     "100%": { opacity: "1", transform: "translateX(0)", visibility: "visible" },
                 },
-                slideInRight: {
-                    "0%": { opacity: "0", transform: "translateX(150px)", visibility: "visible" },
-                    "100%": { opacity: "1", transform: "translateX(0)", visibility: "visible" },
-                },
             },
             animation: {
                 grow: "grow 0.4s ease-in-out forwards",
                 flipDown: "flipDown 0.3s forwards",
                 slideInLeft: "slideInLeft 0.5s ease-in-out forwards",
-                slideInRight: "slideInRight 0.8s ease-in-out forwards",
                 slideDown: "slideDown 0.3s ease-in-out forwards",
                 slideUp: "slideUp 0.7s ease-in-out forwards",
                 slideUpFast: "slideUpFast 0.4s ease-in-out forwards",
