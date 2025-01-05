@@ -2,7 +2,7 @@ export const portfolio = {
     title: "포트폴리오",
     titleDescription: "(현재 페이지)",
     specs: {
-        period: "2024.10 - 11 (21일)",
+        period: "2024.10-11 (21일)",
         teamInfo: "개인 프로젝트",
         skills: { all: ["Next.js", "TypeScript", "TailwindCSS"] },
     },
@@ -29,14 +29,14 @@ export const portfolio = {
 
 export const meetsin = {
     title: "MEETSIN",
-    titleDescription: "실시간 비대면 스터디룸 서비스",
+    titleDescription: "실시간 소통과 상호작용이 가능한 스터디룸 서비스",
     specs: {
-        period: "2023.09 - 진행 중",
+        period: "2023.09- 진행 중",
         teamInfo: "팀 프로젝트 (3인) | 프론트엔드, 백엔드, 디자인 담당",
         skills: {
             공통: ["TypeScript", "Socket.IO", "GitHub Actions"],
             프론트엔드: ["Next.js", "TanStack Query", "Jotai", "Sass", "Phaser"],
-            백엔드: ["NestJS", "MongoDB", "Mongoose", "AWS EC2", "Nginx"],
+            백엔드: ["NestJS", "MongoDB", "Mongoose", "AWS EC2", "NGINX"],
         },
     },
     highlights: [
