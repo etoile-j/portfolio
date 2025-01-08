@@ -36,7 +36,7 @@ export const meetsin = {
         skills: {
             공통: ["TypeScript", "Socket.IO", "GitHub Actions"],
             프론트엔드: ["Next.js", "TanStack Query", "Jotai", "Sass", "Phaser"],
-            백엔드: ["NestJS", "MongoDB", "Mongoose", "AWS EC2", "NGINX"],
+            백엔드: ["NestJS", "MongoDB", "Mongoose", "AWS EC2", "nginx"],
         },
     },
     highlights: [
@@ -67,12 +67,14 @@ export const meetsin = {
             이를 통해 관심사의 분리의 중요성도 깨닫게 되었습니다.`,
         },
         {
-            title: "AWS EC2와 Nginx를 활용한 서버 구축 및 네트워크 인프라 및 관리",
+            title: "AWS EC2와 nginx 활용한 서버 구축 및 네트워크 인프라 및 관리",
             description: `AWS를 통해 서버를 구축하면서
             IP 설정, DNS 관리, SSH 연결, 프록시, 로드 밸런싱 등 다양한 네트워크 구성 요소를 학습했습니다.
 
-            또한 AWS의 정책 변화로 Public IP 요금이 발생해
-            Nginx 리버스 프록시를 활용해 HTTPS를 적용하였습니다. 
+            그리고 HTTPS 적용을 위해 AWS의 로드 밸런서를 사용하던 중, AWS의 정책 변화로
+            로드 밸런서가 사용하는 Public IP에 요금이 발생했습니다.
+            여러 대안을 시도 및 고민한 결과, 간결하면서도 설정을 세부적으로 할 수 있는 
+            nginx의 리버스 프록시를 활용해 HTTPS를 적용하였습니다. 
             
             이를 통해 서버 관리 및 네트워크 환경 설정에 필요한 지식들을 쌓을 수 있었습니다.`,
         },
