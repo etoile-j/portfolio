@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR, Rubik, Poppins, Inconsolata } from "next/font/google";
+import Analysis from "./analysis";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                 className={`min-w-[340px] ${notoSansKR.className} ${rubik.variable} ${poppins.variable} ${inconsolata.variable}`}
             >
                 {children}
+                <Analysis />
             </body>
         </html>
     );
