@@ -1,6 +1,6 @@
 export const portfolio = {
     title: "포트폴리오",
-    titleDescription: "(현재 페이지)",
+    titleDescription: "(현재 웹페이지)",
     specs: {
         period: "2024.10-11 (21일)",
         teamInfo: "개인 프로젝트",
