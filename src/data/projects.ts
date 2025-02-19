@@ -31,7 +31,7 @@ export const meetsin = {
     title: "MEETSIN",
     titleDescription: "실시간 소통과 상호작용이 가능한 스터디룸 서비스",
     specs: {
-        period: "2023.09- 진행 중",
+        period: "2023.09-2024.12(1년 2개월) | 완성 후 꾸준히 유지보수 및 개발 중",
         teamInfo: "팀 프로젝트 (3인) | 프론트엔드, 백엔드, 디자인 담당",
         skills: {
             공통: ["TypeScript", "Socket.IO", "GitHub Actions"],
@@ -49,7 +49,9 @@ export const meetsin = {
 	        사용자가 빠르게 종료를 인지할 수 있도록 개선하였습니다.
             그리고 화면이 활성화된 상태에서는 알림을 보내지 않아 불필요한 알림을 최소화하였습니다.
             
-            이 과정을 통해 백그라운드 작업 처리와 서비스 워커의 생명주기에 대해서도 알게 되었습니다.`,
+            이 과정을 통해 백그라운드 작업 처리와 서비스 워커의 생명주기에 대해서도 알게 되었으며
+            MDN의 관련 문서 14개를 번역 기여하였습니다.
+`,
         },
         {
             title: "Figma를 사용해 UI 디자인",
@@ -95,7 +97,7 @@ export const ourshop = {
     title: "OUR-SHOP",
     titleDescription: "오픈마켓 형태의 온라인 쇼핑몰",
     specs: {
-        period: "2022.09-11 (2개월)",
+        period: "2022.09-11(2개월)",
         teamInfo: "개인 프로젝트",
         skills: {
             all: [
@@ -159,7 +161,7 @@ export const whobego = {
     title: "who-be-go",
     titleDescription: "후기 무비 고 | 나만의 영화 감상 기록장",
     specs: {
-        period: "2022.08 (2주)",
+        period: "2022.08(2주)",
         teamInfo: "팀 프로젝트 (6인) | 프론트엔드 담당",
         skills: { all: ["TypeScript", "HTML", "Sass"] },
     },

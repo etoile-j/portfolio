@@ -37,7 +37,7 @@ const Intro = () => {
                             <br /> 개발자 임수진입니다.
                         </p>
                     </div>
-                    <p className="pl-2 text-gray-200">2025.01.</p>
+                    <p className="pl-2 text-gray-200">2025.02.</p>
                 </div>
             </div>
             <Image
