@@ -6,23 +6,26 @@ import { feIcons, etcIcons } from "@/data";
 
 const Skills = () => {
     const skillsDiv = useRef<HTMLDivElement | null>(null);
-    const { isVisible: isVisibleSkills } = useSlideUp(skillsDiv);
+    const { isVisible } = useSlideUp(skillsDiv);
 
     const renderIcons = (icons: string[]) => (
-        <ul className="flex flex-wrap justify-center gap-3.5 md:gap-6 xl:gap-10 drop-shadow">
+        <ul className="flex flex-wrap-reverse justify-center gap-3.5 md:gap-6 xl:gap-10">
             {icons.map((icon, index) => (
                 <li
                     key={icon}
                     style={{ animationDelay: `${index * 0.1}s` }}
-                    className={`opacity-0 ${isVisibleSkills ? "animate-slideUpFast" : ""}`}
+                    className={`opacity-0 ${isVisible ? "animate-slideUpFast group" : ""}`}
                 >
                     <Image
                         src={`/images/icons/${icon}.svg`}
                         alt={icon}
-                        title={icon}
                         width={64}
                         height={64}
+                        className="relative drop-shadow-md z-10"
                     />
+                    <p className="invisible group-hover:visible !z-20 absolute -bottom-2 translate-y-full left-1/2 -translate-x-1/2 font-inconsolata bg-gray-100 rounded px-2 rounded-xl">
+                        {icon}
+                    </p>
                 </li>
             ))}
         </ul>
@@ -31,13 +34,10 @@ const Skills = () => {
     return (
         <section className="mb-28">
             <h2 id="skills">Skills</h2>
-            <div
-                ref={skillsDiv}
-                className={`opacity-0 ${isVisibleSkills ? "animate-slideUp" : ""}`}
-            >
+            <div ref={skillsDiv} className={`opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
                 {renderIcons(feIcons)}
             </div>
-            <div className={`pt-12 opacity-0 ${isVisibleSkills ? "animate-slideUp" : ""}`}>
+            <div className={`pt-12 opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
                 {renderIcons(etcIcons)}
             </div>
         </section>
