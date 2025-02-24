@@ -4,15 +4,16 @@ import ProjectCard from "./projectCard/projectCard";
 import useSlideUp from "@/hooks/useSlideUp";
 import { projects } from "@/data";
 import { IProjectData } from "@/types";
+import { SECTIONS } from "@/constants";
 
-const Project = () => {
+const Projects = () => {
     const sectionTitleRef = useRef<HTMLHeadingElement | null>(null);
     const { isVisible } = useSlideUp(sectionTitleRef);
 
     return (
         <section className="max-w-[1190px] mx-auto">
             <h2 className={isVisible ? "animate-slideUp" : ""} ref={sectionTitleRef}>
-                Projects
+                {SECTIONS.PROJECTS}
             </h2>
             <div className="text-left xl:overflow-hidden">
                 {projects.map((project: IProjectData) => (
@@ -22,4 +23,4 @@ const Project = () => {
         </section>
     );
 };
-export default Project;
+export default Projects;

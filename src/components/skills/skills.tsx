@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import useSlideUp from "@/hooks/useSlideUp";
 import { feIcons, etcIcons } from "@/data";
+import { SECTIONS } from "@/constants";
 
 const Skills = () => {
     const skillsDiv = useRef<HTMLDivElement | null>(null);
@@ -33,7 +34,7 @@ const Skills = () => {
 
     return (
         <section className="mb-28">
-            <h2 id="skills">Skills</h2>
+            <h2 id="skills">{SECTIONS.SKILL_SET}</h2>
             <div ref={skillsDiv} className={`opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
                 {renderIcons(feIcons)}
             </div>

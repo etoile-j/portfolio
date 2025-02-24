@@ -1,6 +1,6 @@
 import Intro from "@/components/intro/intro";
 import Skills from "@/components/skills/skills";
-import Project from "@/components/project/project";
+import Projects from "@/components/projects/projects";
 import Footer from "@/components/footer/footer";
 import Navigation from "@/components/navigation/navigation";
 import NavigationMenu from "@/components/navigation/navigationMenu";
@@ -24,7 +24,7 @@ const Home = () => {
                                 <div className="md:hidden z-10 sticky top-8">
                                     <Navigation />
                                 </div>
-                                <Project />
+                                <Projects />
                             </div>
                         </div>
                     </div>

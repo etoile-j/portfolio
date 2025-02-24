@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { socialLinks, projects } from "@/data";
 import { useVisibleArea } from "@/hooks/useVisibleArea";
+import { SECTIONS } from "@/constants";
 
 const NavigationMenu = () => {
     const visibleArea = useVisibleArea();
@@ -40,11 +41,13 @@ const NavigationMenu = () => {
                             visibleArea === "skills" ? "text-violet-400" : ""
                         }`}
                     >
-                        <span>Skills</span>
+                        <span>{SECTIONS.SKILL_SET}</span>
                     </a>
                 </li>
                 <li>
-                    <div className="h-8 pl-4 font-bold text-gray-600 text-lg">Projects</div>
+                    <div className="h-8 pl-4 font-bold text-gray-600 text-lg">
+                        {SECTIONS.PROJECTS}
+                    </div>
                     <ol className="font-normal text-base">
                         {projects.map((project) => (
                             <li key={project.title} className="relative nav-item pl-9 mt-1">
