@@ -10,7 +10,7 @@ const Skills = () => {
     const { isVisible } = useSlideUp(skillsDiv);
 
     const renderIcons = (icons: string[]) => (
-        <ul className="flex flex-wrap-reverse justify-center gap-3.5 md:gap-6 xl:gap-10">
+        <ul className="flex flex-wrap-reverse justify-center gap-3.5 md:gap-6 xl:gap-8">
             {icons.map((icon, index) => (
                 <li
                     key={icon}
@@ -38,7 +38,7 @@ const Skills = () => {
             <div ref={skillsDiv} className={`opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
                 {renderIcons(feIcons)}
             </div>
-            <div className={`pt-12 opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
+            <div className={`opacity-0 pt-12 ${isVisible ? "animate-slideUp" : ""}`}>
                 {renderIcons(etcIcons)}
             </div>
         </section>
