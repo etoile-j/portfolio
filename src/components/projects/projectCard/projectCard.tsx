@@ -14,11 +14,11 @@ const ProjectCard = ({
 
     return (
         <article ref={cardRef} className={`opacity-0 ${isVisible ? "animate-slideUp" : ""}`}>
-            <div className="ml-2.5">
+            <div id={title} className="ml-2.5">
                 <div>{titleDescription}</div>
                 <h3 className="font-poppins italic text-3xl">{title}</h3>
             </div>
-            <div id={title} className="mt-6 pb-28">
+            <div className="mt-6 pb-28">
                 <div className="flex xl:justify-normal 2xl:flex-nowrap flex-wrap-reverse bg-gray-100 rounded-3xl">
                     <div className="p-7 md:p-9 min-w-fit break-keep">
                         <ProjectSpecs specs={specs} />
